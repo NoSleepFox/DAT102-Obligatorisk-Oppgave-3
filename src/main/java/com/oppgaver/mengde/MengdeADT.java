@@ -1,4 +1,4 @@
-package com.oppgaver;
+package com.oppgaver.mengde;
 
 public interface MengdeADT<T> {
 	

@@ -1,17 +1,17 @@
-package com.oppgaver;
+package com.oppgaver.mengde;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class TabellMengdeTest {
-    private TabellMengde<Integer> mengde1;
-    private TabellMengde<Integer> mengde2;
+public class JavaSetToMengdeTest {
+    private JavaSetToMengde<Integer> mengde1;
+    private JavaSetToMengde<Integer> mengde2;
 
     @BeforeEach
     public void setup() {
-        mengde1 = new TabellMengde<>();
-        mengde2 = new TabellMengde<>();
+        mengde1 = new JavaSetToMengde<>();
+        mengde2 = new JavaSetToMengde<>();
 
         mengde1.leggTil(1);
         mengde1.leggTil(2);
@@ -24,7 +24,7 @@ public class TabellMengdeTest {
 
     @Test
     public void testErTom() {
-        TabellMengde<Integer> tom = new TabellMengde<>();
+        JavaSetToMengde<Integer> tom = new JavaSetToMengde<>();
         assertTrue(tom.erTom());
         tom.leggTil(10);
         assertFalse(tom.erTom());
@@ -32,7 +32,7 @@ public class TabellMengdeTest {
 
     @Test
     public void testLeggTilOgAntall() {
-        TabellMengde<Integer> m = new TabellMengde<>();
+        JavaSetToMengde<Integer> m = new JavaSetToMengde<>();
         m.leggTil(1);
         m.leggTil(2);
         m.leggTil(2);
@@ -56,7 +56,7 @@ public class TabellMengdeTest {
 
     @Test
     public void testErDelmengdeAv() {
-        TabellMengde<Integer> del = new TabellMengde<>();
+        JavaSetToMengde<Integer> del = new JavaSetToMengde<>();
         del.leggTil(1);
         del.leggTil(2);
 
@@ -66,7 +66,7 @@ public class TabellMengdeTest {
 
     @Test
     public void testErDisjunkt() {
-        TabellMengde<Integer> m = new TabellMengde<>();
+        JavaSetToMengde<Integer> m = new JavaSetToMengde<>();
         m.leggTil(7);
         m.leggTil(8);
 

@@ -1,4 +1,4 @@
-package com.oppgaver;
+package com.oppgaver.mengde;
 
 import java.util.HashSet;
 import java.util.Set;
