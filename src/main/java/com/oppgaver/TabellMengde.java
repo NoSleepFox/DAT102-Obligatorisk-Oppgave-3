@@ -9,8 +9,6 @@ public class TabellMengde<T> implements MengdeADT<T>{
 	private T[] tabell;
 	private int antall;
 
-	/************************************************************/
-
 	public TabellMengde() {
 		this(DEFAULT_KAPASITET);
 	}
@@ -20,8 +18,6 @@ public class TabellMengde<T> implements MengdeADT<T>{
 		tabell = (T[]) new Object[kapasitet];
 		antall = 0;
 	}
-
-	/************************************************************/
 
 	@Override
 	public boolean erTom() {
@@ -37,7 +33,7 @@ public class TabellMengde<T> implements MengdeADT<T>{
         }
         return false;
 	}
-
+    
     @Override
     public boolean erDelmengdeAv(MengdeADT<T> annenMengde) {
         for (int i = 0; i < antall; i++) {
@@ -115,8 +111,8 @@ public class TabellMengde<T> implements MengdeADT<T>{
     @Override
     public void leggTilAlleFra(MengdeADT<T> annenMengde) {
         T[] annenMengdeTabell = annenMengde.tilTabell();
-        for (T mengdeT : annenMengdeTabell) {
-            leggTil(mengdeT);
+        for (T element : annenMengdeTabell) {
+            leggTil(element);
         }
     }
 
